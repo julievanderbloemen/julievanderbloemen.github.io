@@ -1,16 +1,7 @@
+# Julie Vanderbloemen
+# April, 14, 2025
 # CS1210: HW1
-######################################################################
-# Complete the signed() function, certifying that:
-#  1) the code below is entirely your own work, and
-#  2) you have not shared it with anyone else.
-#
-# ToDo: Change the word "hawkid" between the two double quote marks to
-# match your own hawkid. Your hawkid is the "login identifier" (not
-# your email address) that you use to login to all University
-# services.
-#
-def signed():
-    return(["jevanderbloemen"])
+# Hus - the Mancala game
 
 ######################################################################
 # You will likely require one or more functions from the random module.
@@ -238,7 +229,7 @@ def legal(B, P):
 def chooseAutomatic(B, P):
     '''randomly selects a legal move for player(P)
 returns tuple of index and tokens from selected move'''
-    pick = choice(legal(B, P))
+    pick = choice(legal(B, P)) #random.choice
     return (pick, clear(B, pick))
 
 ######################################################################
